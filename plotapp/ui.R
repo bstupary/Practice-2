@@ -7,7 +7,7 @@ library(shiny)
 shinyUI(fluidPage(
     sidebarLayout(
       sidebarPanel(
-        selectInput("Variable", "Variable:", 
+      selectInput("variable", "Variable:", 
                     c("Cylinder"= "cyl" ,"am","gear"))
       ),
       mainPanel(

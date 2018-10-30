@@ -2,7 +2,11 @@
 title: "Practice Markdown"
 author: "Blake Stuparyk"
 date: "October 30, 2018"
-output: html_document
+output: 
+  html_document:
+    theme: sandstone
+    toc: true
+    toc_float: true
 ---
 
 ### First Example
@@ -12,6 +16,7 @@ I'm going to add two numbers
 library(DT)
 library(tidyverse)
 datatable(mtcars)
+
 
 plot(cars$speed,cars$dist)
 ## Plot the cars speed by distance
@@ -23,3 +28,5 @@ summary(m1) ## output of linear model
 ## add linear model to plot
 abline(m1, col="Red", lwd=2)
 ```
+
+### Second Header

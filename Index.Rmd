@@ -1,0 +1,25 @@
+---
+title: "Practice Markdown"
+author: "Blake Stuparyk"
+date: "October 30, 2018"
+output: html_document
+---
+
+### First Example
+
+I'm going to add two numbers
+```{r warning=FALSE, message=FALSE}
+library(DT)
+library(tidyverse)
+datatable(mtcars)
+
+plot(cars$speed,cars$dist)
+## Plot the cars speed by distance
+plot(cars$speed,cars$dist, xlab="Speed (mph)", ylab="Distance (miles)", pch=19, cex=1.3, cex.axis=1.3, cex.lab=1.5)
+
+## Run a linear model comparing speed and distance
+m1 <- lm(dist~speed, data=cars)
+summary(m1) ## output of linear model
+## add linear model to plot
+abline(m1, col="Red", lwd=2)
+```

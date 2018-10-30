@@ -1,0 +1,15 @@
+---
+title: "Practice Markdown"
+author: "Blake Stuparyk"
+date: "October 30, 2018"
+output: html_document
+---
+
+### First Example
+
+I'm going to add two numbers
+```{r warning=FALSE, message=FALSE}
+library(DT)
+library(tidyverse)
+datatable(mtcars)
+```

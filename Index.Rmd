@@ -27,6 +27,7 @@ m1 <- lm(dist~speed, data=cars)
 summary(m1) ## output of linear model
 ## add linear model to plot
 abline(m1, col="Red", lwd=2)
+##THINGS
 ```
 
 ### Second Header
